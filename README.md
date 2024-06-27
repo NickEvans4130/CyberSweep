@@ -28,11 +28,11 @@ To add CyberSweep to your Discord server, follow these steps:
 
 Once installed and configured, you can start using CyberSweep with the following commands:
 
-- `!scan [url]`: Initiates a vulnerability scan on the specified URL.
-- `!schedule_scan [url] [interval]`: Schedules a recurring vulnerability scan at specified intervals (e.g., daily, weekly).
+- `$scan [url]`: Initiates a vulnerability scan on the specified URL.
+- `$schedule_scan [url] [interval]`: Schedules a recurring vulnerability scan at specified intervals (e.g., daily, weekly).
 - `$deleteme`: Deletes all data associated with your user ID from CyberSweep.
 
-For detailed command usage and help, type `!help` in your Discord server chat.
+For detailed command usage and help, type `$bot_help` in your Discord server chat.
 
 ## Privacy Policy
 
