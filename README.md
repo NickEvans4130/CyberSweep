@@ -1,5 +1,4 @@
-Certainly! Here's an adjusted README file focusing on CyberSweep as a bot that assesses vulnerabilities of websites:
-
+CyberSweep is currently a work in progress, therefore there is no current invitelink, however this will be updated when the bot is released.
 ---
 
 # CyberSweep Bot
