@@ -47,7 +47,7 @@ async def schedule_scan(ctx, url:str, interval:str):
     else:
         await ctx.send("Invalid interval. Please use 'daily' or 'weekly'.")
 
-@bot.comamdnd(name="scan_report")
+@bot.command(name="scan_report")
 async def scan_report(ctx,url:str):
     await ctx.send(f"Fetching scan history for {url}...")
     scan_history = "" # Put data here
