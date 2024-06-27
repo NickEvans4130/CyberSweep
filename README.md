@@ -37,7 +37,7 @@ For detailed command usage and help, type `!help` in your Discord server chat.
 
 ## Privacy Policy
 
-Please refer to our [privacy policy]([#](https://gist.github.com/NickEvans4130/4e3afa7fda29797ce3d0a0af8649e894)) to understand how we handle your data and ensure your privacy.
+Please refer to our [privacy policy](https://gist.github.com/NickEvans4130/4e3afa7fda29797ce3d0a0af8649e894) to understand how we handle your data and ensure your privacy.
 
 ## Support
 
