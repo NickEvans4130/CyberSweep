@@ -6,7 +6,7 @@ import subprocess
 import os
 import datetime
 from dotenv import load_dotenv
-import ticketing_system  # Import the ticketing system
+import ticketing  # Import the ticketing system
 from severity_assessment import assess_severity  # Import severity assessment function
 
 # Load environment variables
@@ -55,7 +55,7 @@ class MyBot(commands.Cog):
             severity_level = assess_severity(result.stdout)
             
             # Create a ticket based on the scan results and severity level
-            ticket_id = ticketing_system.create_ticket(
+            ticket_id = ticketing.create_ticket(
                 title=f"Vulnerability Scan for {url}",
                 description=f"Scan results:\n{result.stdout}",
                 severity_level=severity_level,
@@ -110,7 +110,7 @@ class MyBot(commands.Cog):
         )
         await interaction.response.send_message(embed=embed)
         
-        tickets = ticketing_system.get_all_tickets()
+        tickets = ticketing.get_all_tickets()
         report = "\n".join([f"Ticket ID: {t[0]}, Title: {t[1]}, Status: {t[7]}" for t in tickets if url in t[3]])
         embed = discord.Embed(
             title="Scan History", 
