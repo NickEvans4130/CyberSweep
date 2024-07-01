@@ -24,7 +24,7 @@ def init_db():
 def create_ticket(title, description, severity_level, affected_components, steps_to_reproduce, attachments=None):
     conn = sqlite3.connect('tickets.db')
     cursor = conn.cursor()
-    created_at = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    created_at = datetime.now().strftime(r'%Y-%m-%d %H:%M:%S')
     status = "open"
     cursor.execute('''INSERT INTO tickets (title, description, severity_level, affected_components, steps_to_reproduce, attachments, status, created_at)
                       VALUES (?, ?, ?, ?, ?, ?, ?, ?)''',
@@ -47,7 +47,7 @@ def get_ticket(ticket_id):
 def update_ticket_status(ticket_id, status):
     conn = sqlite3.connect('tickets.db')
     cursor = conn.cursor()
-    updated_at = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    updated_at = datetime.now().strftime(r'%Y-%m-%d %H:%M:%S')
     cursor.execute('UPDATE tickets SET status=?, updated_at=? WHERE id=?', (status, updated_at, ticket_id))
     conn.commit()
     conn.close()
